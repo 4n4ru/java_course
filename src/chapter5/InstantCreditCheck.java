@@ -44,11 +44,11 @@ public class InstantCreditCheck {
         return creditScore;
     }
     public static boolean isUserQualified (double salary, int creditScore){
-        boolean qualified = false;
         if (salary >= requiredSalary && creditScore >= requiredCreditScore){
-            qualified = true;
+            return true;
+        } else {
+            return false;
         }
-        return  qualified;
     }
 
     public static void informUser (boolean qualified){
