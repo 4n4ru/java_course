@@ -9,6 +9,8 @@ public class GradeMessage {
         System.out.println("Enter your letter grade:");
         Scanner scanner = new Scanner(System.in);
         String grade = scanner.next();
+        scanner.close();
+
         String message;
 
         switch (grade){

@@ -19,6 +19,8 @@ public class MadLibs {
         System.out.println("Please enter an adjective: ");
         String adjective = scanner.nextLine();
 
+        scanner.close();
+
         // Output sentence "On a [adjective][season of the year] day, I drink a minimum of [ whole number] cups of coffee."
         System.out.println("On a " + adjective + " " + season + " day, I drink a minimum of " + number + " cups of coffee.");
 

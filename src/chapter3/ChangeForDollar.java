@@ -21,6 +21,8 @@ public class ChangeForDollar {
         int numDimes = Integer.parseInt(scanner.nextLine());
         System.out.println("Please enter the number of quarters:");
         int numQuarters = Integer.parseInt(scanner.nextLine());
+
+        scanner.close();
         
         int guessTotal = numPennies * penny + numNickles * nickel + numDimes * dime + numQuarters * quarter;
         
